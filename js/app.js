@@ -75,7 +75,7 @@ let tokyo = {
   render: function () {
 
     this.calCookiesPerHour();
-    let dataSheetContainer = document.getElementById('test1');
+    let dataSheetContainer = document.getElementById('test2');
     let ul = document.createElement('ul');
     dataSheetContainer.appendChild(ul)
     ul.setAttribute('class', 'tokyoCookies')
@@ -127,7 +127,7 @@ let dubai = {
   render: function () {
 
     this.calCookiesPerHour();
-    let dataSheetContainer = document.getElementById('test1');
+    let dataSheetContainer = document.getElementById('test3');
     let ul = document.createElement('ul');
     dataSheetContainer.appendChild(ul)
     ul.setAttribute('class', 'dubaiCookies')
@@ -180,7 +180,7 @@ let paris = {
   render: function () {
 
     this.calCookiesPerHour();
-    let dataSheetContainer = document.getElementById('test1');
+    let dataSheetContainer = document.getElementById('test4');
     let ul = document.createElement('ul');
     dataSheetContainer.appendChild(ul)
     ul.setAttribute('class', 'parisCookies')
@@ -232,7 +232,7 @@ let lima = {
   render: function () {
 
     this.calCookiesPerHour();
-    let dataSheetContainer = document.getElementById('test1');
+    let dataSheetContainer = document.getElementById('test5');
     let ul = document.createElement('ul');
     dataSheetContainer.appendChild(ul)
     ul.setAttribute('class', 'limaCookies')
