@@ -1,0 +1,36 @@
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: blue;
+}
+ul {
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+}
+body {
+  font: 14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2b2b2b;
+  font-weight: 300;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 20px;
+  border-spacing: 0;
+  box-sizing: border-box;
+  text-indent: initial;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
+  display: table-cell;
+  vertical-align: inherit;
+}
