@@ -71,7 +71,6 @@ let tokyo = new City('Tokyo', 3, 24, 1.2);
 let dubai = new City('Dubai', 11, 38, 3.7);
 let paris = new City('Paris', 20, 38,2.3);
 let lima = new City('Lima', 2, 16, 4.6);
-let total = 
 
 
 
@@ -114,26 +113,18 @@ City.prototype.render = function () {
     sale1.textContent = this.cookiesSoldThisHour[i];
     tRow1.appendChild(sale1);
 
-
   }
-   
 
-  //   li.textContent = `${hour[i]}: ${this.cookiesSoldThisHour[i]} Cookies`;
-  //   ul.appendChild(li);
-  // }
+  // function dailyHours() {
+  //   for (let i = 0; i < hour.length; i++) {
+  //     let totalDay = document.getElementById('tr');
+  //     let daySale = document.createElement('th');
+  //     totalDay.appendChild(daySale);
+  //     daySale.textContent = hour[i];
 
-  // let totalSign = document.createElement('li');
-  // ul.appendChild(totalSign);
-  // function sumArray(cookiesSoldThisHourTotal) {
-  //   let sum = 0;
-  //   for (let i = 0; i < cookiesSoldThisHourTotal.length; i += 1) {
-  //     sum += cookiesSoldThisHourTotal[i];
   //   }
-  //   console.log(`sum ${sum}`);
-  //   return sum;
   // }
-  // let total = sumArray(this.cookiesSoldThisHour);
-  // totalSign.textContent = `Total: ${total} Cookies`;
+  // dailyHours();
 };
 
 seattle.render();
