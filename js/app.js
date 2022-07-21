@@ -2,6 +2,8 @@
 
 let hour = ['6 a.m', '7 a.m', '8 a.m', '9 a.m', '10 a.m', '11 a.m', '12 p.m', '1 p.m', '2 p.m', '3 p.m', '4 p.m', '5 p.m', '6 p.m', '7 p.m',];
 
+let tfoot = document.querySelector('tfoot');
+
 let cityArray = [];
 function City(name, min, max, avg) {
   this.name = name;
@@ -36,6 +38,24 @@ City.prototype.calCookiesPerHour = function () {
   }
 };
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let inputCityname = event.target.cName.value;
+  let inputCityMax = parseInt(event.target.cMax.value);
+  let inputCityMin = parseInt(event.target.cMin.value);
+  let inputCityAvg = parseInt(event.target.cAvg.value);
+  let testCity = new City(inputCityname,inputCityMin,inputCityMax,inputCityAvg);
+  testCity.render();
+  tfoot.innerHTML = '';
+  makeFootRow();
+  console.log(testCity);
+}
+// listeners on the form. When forms get submitted runs function. Listeners added ONCE 
+// live outside of the function. Footer had to be global  --- created footeragain, footer global will be ran once total. innterhtml footerrow for total. reset it
+
+
+
+
 City.prototype.render = function () {
   this.getRandomCustomers();
   this.calCookiesPerHour();
@@ -68,7 +88,6 @@ let topSection = function () {
 };
 
 function makeFootRow() {
-  let tfoot = document.querySelector('tfoot');
   let totalRow = document.createElement('tr');
   tfoot.appendChild(totalRow);
   let totalData = document.createElement('td');
@@ -96,4 +115,18 @@ topSection();
 for (let i = 0; i < cityArray.length; i++) {
   cityArray[i].render();
 }
+
+
+let form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
 makeFootRow();
+
+// let form = document.getElementById('formID');
+// form.addEventListener('submit',handleSubmit);
+// function handleSubmit(event) {
+//   console.log(event.target.cName.value);
+//   console.log(event.target.cAvg.value);
+//   event.preventDefault('');
+
+
+
