@@ -67,33 +67,6 @@ let topSection = function () {
   totalCityName.textContent = 'Daily Location Total';
 };
 
-// function makeFootRow() {
-//   let tfoot = document.querySelector('tfoot');
-//   let totalRow = document.createElement('tr');
-//   console.log(totalRow);
-//   tfoot.appendChild(totalRow);
-//   let totalData = document.createElement('td');
-//   totalData.textContent = 'totals';
-//   totalRow.appendChild(totalData);
-//   for (let i = 0; i < hour.length; i++) {
-//     let totalData2 = document.createElement('td');
-//     let hourlyTotal = 0;
-//     for (let j = 0; j < cityArray.length; j++) {
-//       hourlyTotal += cityArray[j].cookiesSoldThisHour[i];
-//     }
-//     totalData2.textContent = hourlyTotal;
-//     totalRow.appendChild(totalData2);
-//   }
-//   let grandTotal = 0;
-//   for (let i = 0; i < cityArray.length; i++) {
-//     grandTotal += cityArray[i].dailyTotal;
-//   }
-//   let grandTotalData = document.createElement('td');
-//   grandTotalData.textContent = grandTotal;
-//   totalRow.appendChild(grandTotalData);
-// }
-
-
 function makeFootRow() {
   let tfoot = document.querySelector('tfoot');
   let totalRow = document.createElement('tr');
@@ -115,8 +88,8 @@ function makeFootRow() {
     grandTotal += cityArray[i].dailyTotal;
   }
   let grandTotalData = document.createElement('td');
-  grandTotalData.textContent = grandTotal;
   totalRow.appendChild(grandTotalData);
+  grandTotalData.textContent = grandTotal;
 }
 
 topSection();
