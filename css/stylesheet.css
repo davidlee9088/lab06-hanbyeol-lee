@@ -31,7 +31,8 @@ li {
 
 
 body{
-background-color: rgba(245,211,148,255)
+background-color: rgba(245,211,148,255);
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 img {
@@ -39,9 +40,19 @@ img {
   width: 282px;
 }
 
+#highLights {
+  font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Pacifico', cursive;
+color: brown;
+}
 
+h1{
+  color: aqua;
+}
 
-
+footer {
+  background-color: darkorange;
+}
 
 
 
