@@ -121,6 +121,8 @@ let form = document.querySelector('form');
 form.addEventListener('submit', handleSubmit);
 makeFootRow();
 
+
+
 // let form = document.getElementById('formID');
 // form.addEventListener('submit',handleSubmit);
 // function handleSubmit(event) {
