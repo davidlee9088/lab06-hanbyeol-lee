@@ -50,7 +50,7 @@ function handleSubmit(event) {
   makeFootRow();
   console.log(testCity);
 }
-// listeners on the form. When forms get submitted runs function. Listeners added ONCE 
+// listeners on the form. When forms get submitted runs function. Listeners added ONCE
 // live outside of the function. Footer had to be global  --- created footeragain, footer global will be ran once total. innterhtml footerrow for total. reset it
 
 
